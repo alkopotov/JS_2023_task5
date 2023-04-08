@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+.slider {
+  position:relative;
+  margin: auto;
+  margin-top: 50px;
+  width: 300px;
+  height: 200px;
+}
+
+.scale {
+  margin: auto;
+  width: 300px;
+  height: 8px;
+  background-color: lightgreen;
+}
+
+.runner {
+  position: absolute;
+  left: 291px;
+  top: -4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: thin 1px white;
+  background-color: red;
+  z-index: 2;
+}
+.marks {
+position: absolute;
+left: -1px;
+top: -3px;
+width: 301px;
+display: flex;
+z-index: 1;
+}
+
+.mark {
+  width: calc(299px / 10);
+  height: 15px;
+}
+
+.mark_brdlr {
+  border-left: 2px solid green;
+  border-right: 2px solid green;
+}
+
+.mark_brdr {
+  border-right: 2px solid green;
+}
+.bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5%;
+  height: 8px;
+  background-color: green;
+}
