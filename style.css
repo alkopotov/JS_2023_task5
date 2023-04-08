@@ -1,3 +1,9 @@
+:root {
+  --scale_color: rgb(129, 219, 129);
+  --bar_color: rgb(64, 145, 64);
+  --runner_color:  rgb(64, 145, 64);
+}
+
 body {
   margin: 0;
 }
@@ -14,7 +20,7 @@ body {
   margin: auto;
   width: 300px;
   height: 8px;
-  background-color: lightgreen;
+  background-color: var(--scale_color);
 }
 
 .runner {
@@ -24,8 +30,8 @@ body {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  border: thin 1px white;
-  background-color: red;
+  border: thin white;
+  background-color: var(--runner_color);
   z-index: 2;
 }
 .marks {
@@ -43,12 +49,12 @@ z-index: 1;
 }
 
 .mark_brdlr {
-  border-left: 2px solid green;
-  border-right: 2px solid green;
+  border-left: 2px solid var(--scale_color);
+  border-right: 2px solid var(--scale_color);
 }
 
 .mark_brdr {
-  border-right: 2px solid green;
+  border-right: 2px solid var(--scale_color);
 }
 .bar {
   position: absolute;
@@ -56,5 +62,6 @@ z-index: 1;
   top: 0;
   width: 5%;
   height: 8px;
-  background-color: green;
+  background-color: var(--bar_color);
+  z-index: 2;
 }
