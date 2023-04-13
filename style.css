@@ -6,12 +6,13 @@
 
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .slider {
   position:relative;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 300px;
   height: 200px;
 }
@@ -25,22 +26,23 @@ body {
 
 .runner {
   position: absolute;
-  left: 291px;
+  left: -9px;
   top: -4px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   border: thin white;
   background-color: var(--runner_color);
-  z-index: 2;
+  z-index: 3;
+  cursor: pointer;
 }
 .marks {
-position: absolute;
-left: -1px;
-top: -3px;
-width: 301px;
-display: flex;
-z-index: 1;
+  position: absolute;
+  left: -1px;
+  top: -3px;
+  width: 301px;
+  display: flex;
+  z-index: 1;
 }
 
 .mark {
@@ -60,8 +62,18 @@ z-index: 1;
   position: absolute;
   left: 0;
   top: 0;
-  width: 5%;
+  width: 0px;
   height: 8px;
   background-color: var(--bar_color);
   z-index: 2;
+}
+.popup {
+  position: absolute;
+  transform: translate(-50px, -60px);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 0 #0006;
+  background-color: var(--scale_color);
+  color: white;
+  opacity: 0;
 }
